@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">\\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Film_Locations_in_San_Francisco.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Title" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Release Year" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Locations" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Fun Facts" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Production Company" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Distributor" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Director" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Writer" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Actor 1" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Actor 2" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+            <Field name="Actor 3" size="254" source="File: \\Mac\Home\Documents\DADBI\San Francisco Film Locations\Film_Locations_in_San_Francisco.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\work\AppData\Local\Temp\Engine_8792_4e3d1162a5be46a290481466536bb42a_\Engine_7212_f88ec93b2f8b4c8585cbd99f081ef1e5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SF_Film_Locations_File</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b3e48895-d656-46b3-bd39-6fcbaf5820ee" />
+      <Telemetry>
+        <PreviousWorkflowId value="767a3bbd-6f00-481f-841e-a61a359e06f9" />
+        <OriginWorkflowId value="767a3bbd-6f00-481f-841e-a61a359e06f9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

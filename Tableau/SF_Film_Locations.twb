@@ -1,0 +1,1123 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ODataJavaConnector.true...ODataJavaConnector />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Custom SQL Query (samples)' inline='true' name='federated.0vatapd1az6qz51bewrc30uk0but' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.07li89i1rnpy0f10ndhfg1r34143'>
+            <connection CATALOG='publicdata' EXECCATALOG='durable-limiter-341522' authentication='auth-oauth-service-account' class='bigquery' connection-dialect='google-sql' project='publicdata' schema='samples' server-oauth='' username='info7370@durable-limiter-341522.iam.gserviceaccount.com' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.07li89i1rnpy0f10ndhfg1r34143' name='Custom SQL Query' type='text'>SELECT
+title,
+release_year,
+locations,
+fun_facts,
+production_company,
+distributor,
+director,
+writer,
+actor_1,
+actor_2,
+actor_3
+FROM `bigquery-public-data`.san_francisco_film_locations.film_locations</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='bigquery.07li89i1rnpy0f10ndhfg1r34143' name='Custom SQL Query' type='text'>SELECT
+title,
+release_year,
+locations,
+fun_facts,
+production_company,
+distributor,
+director,
+writer,
+actor_1,
+actor_2,
+actor_3
+FROM `bigquery-public-data`.san_francisco_film_locations.film_locations</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locations</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[locations]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>locations</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fun_facts</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[fun_facts]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>fun_facts</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[production_company]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>production_company</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distributor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[distributor]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>distributor</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>director</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>writer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[writer]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>writer</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[actor_1]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>actor_1</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[actor_2]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>actor_2</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[actor_3]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>actor_3</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_6431898AB9D7417BB24144D913DBD39A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_6431898AB9D7417BB24144D913DBD39A]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_6431898AB9D7417BB24144D913DBD39A'>
+            <properties context=''>
+              <relation connection='bigquery.07li89i1rnpy0f10ndhfg1r34143' name='Custom SQL Query' type='text'>SELECT
+title,
+release_year,
+locations,
+fun_facts,
+production_company,
+distributor,
+director,
+writer,
+actor_1,
+actor_2,
+actor_3
+FROM `bigquery-public-data`.san_francisco_film_locations.film_locations</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Film_Locations_in_San_Francisco' inline='true' name='federated.11fa31i0a0jizm16x4h7z0c2hgmh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Film_Locations_in_San_Francisco' name='textscan.0a4ac2w0k3x58n1f6sljt0xoxckm'>
+            <connection class='textscan' directory='/Users/work/Documents/DADBI/San Francisco Film Locations' filename='Film_Locations_in_San_Francisco.tsv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0a4ac2w0k3x58n1f6sljt0xoxckm' name='Film_Locations_in_San_Francisco.tsv' table='[Film_Locations_in_San_Francisco#tsv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='Title' ordinal='0' />
+            <column datatype='integer' name='Release Year' ordinal='1' />
+            <column datatype='string' name='Locations' ordinal='2' />
+            <column datatype='string' name='Fun Facts' ordinal='3' />
+            <column datatype='string' name='Production Company' ordinal='4' />
+            <column datatype='string' name='Distributor' ordinal='5' />
+            <column datatype='string' name='Director' ordinal='6' />
+            <column datatype='string' name='Writer' ordinal='7' />
+            <column datatype='string' name='Actor 1' ordinal='8' />
+            <column datatype='string' name='Actor 2' ordinal='9' />
+            <column datatype='string' name='Actor 3' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0a4ac2w0k3x58n1f6sljt0xoxckm' name='Film_Locations_in_San_Francisco.tsv' table='[Film_Locations_in_San_Francisco#tsv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='Title' ordinal='0' />
+            <column datatype='integer' name='Release Year' ordinal='1' />
+            <column datatype='string' name='Locations' ordinal='2' />
+            <column datatype='string' name='Fun Facts' ordinal='3' />
+            <column datatype='string' name='Production Company' ordinal='4' />
+            <column datatype='string' name='Distributor' ordinal='5' />
+            <column datatype='string' name='Director' ordinal='6' />
+            <column datatype='string' name='Writer' ordinal='7' />
+            <column datatype='string' name='Actor 1' ordinal='8' />
+            <column datatype='string' name='Actor 2' ordinal='9' />
+            <column datatype='string' name='Actor 3' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Release Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Release Year]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Release Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Locations</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Locations]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Locations</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fun Facts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fun Facts]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Fun Facts</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Production Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Production Company]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Production Company</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distributor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Distributor]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Distributor</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Director]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Director</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Writer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Writer]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Writer</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actor 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actor 1]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Actor 1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actor 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actor 2]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Actor 2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actor 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actor 3]</local-name>
+            <parent-name>[Film_Locations_in_San_Francisco.tsv]</parent-name>
+            <remote-alias>Actor 3</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Release Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Film_Locations_in_San_Francisco.tsv' datatype='table' name='[__tableau_internal_object_id__].[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/work/Documents/DADBI/San Francisco Film Locations/Tableau/SF_Film_Locations_Extract.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/23/2022 11:34:02 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Film_Locations_in_San_Francisco' increment-value='%null%' refresh-type='create' rows-inserted='1976' timestamp-start='2022-03-23 23:34:02.218' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>295</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Release Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Release Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Release Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Locations</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Locations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Locations</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fun Facts</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fun Facts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fun Facts</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Production Company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Production Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Production Company</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distributor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Distributor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distributor</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Director</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Writer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Writer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Writer</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actor 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Actor 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actor 1</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>221</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actor 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Actor 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actor 2</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>236</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actor 3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Actor 3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actor 3</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Film_Locations_in_San_Francisco.tsv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Film_Locations_in_San_Francisco.tsv' id='Film_Locations_in_San_Francisco.tsv_9BAAC1957D454948A309A460FACA7C44'>
+            <properties context=''>
+              <relation connection='textscan.0a4ac2w0k3x58n1f6sljt0xoxckm' name='Film_Locations_in_San_Francisco.tsv' table='[Film_Locations_in_San_Francisco#tsv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='Title' ordinal='0' />
+                  <column datatype='integer' name='Release Year' ordinal='1' />
+                  <column datatype='string' name='Locations' ordinal='2' />
+                  <column datatype='string' name='Fun Facts' ordinal='3' />
+                  <column datatype='string' name='Production Company' ordinal='4' />
+                  <column datatype='string' name='Distributor' ordinal='5' />
+                  <column datatype='string' name='Director' ordinal='6' />
+                  <column datatype='string' name='Writer' ordinal='7' />
+                  <column datatype='string' name='Actor 1' ordinal='8' />
+                  <column datatype='string' name='Actor 2' ordinal='9' />
+                  <column datatype='string' name='Actor 3' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='yitu-d5am (data.sfgov.org/api/odata/v4/yitu-d5am)' inline='true' name='odata.0xivelr0jo5lo21dlqnsf04l1uyd' version='18.1'>
+      <connection authentication='auth-none' class='odata' server='https://data.sfgov.org/api/odata/v4/yitu-d5am'>
+        <_.fcp.ODataJavaConnector.true...relation connection='odata.0xivelr0jo5lo21dlqnsf04l1uyd' name='yitu-d5am' table='[yitu-d5am]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>__id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[__id]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>__id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[actor_2]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>actor_2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>writer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[writer]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>writer</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[actor_3]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>actor_3</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[actor_1]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>actor_1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distributor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distributor]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>distributor</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[production_company]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>production_company</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fun_facts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fun_facts]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>fun_facts</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locations</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[locations]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>locations</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>14</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[yitu-d5am]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>-1</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column caption='__Id' datatype='string' name='[__id]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='yitu-d5am' datatype='table' name='[__tableau_internal_object_id__].[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]' role='measure' type='quantitative' />
+      <column caption='Actor 1' datatype='string' name='[actor_1]' role='dimension' type='nominal' />
+      <column caption='Actor 2' datatype='string' name='[actor_2]' role='dimension' type='nominal' />
+      <column caption='Actor 3' datatype='string' name='[actor_3]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Distributor' datatype='string' name='[distributor]' role='dimension' type='nominal' />
+      <column caption='Fun Facts' datatype='string' name='[fun_facts]' role='dimension' type='nominal' />
+      <column caption='Locations' datatype='string' name='[locations]' role='dimension' type='nominal' />
+      <column caption='Production Company' datatype='string' name='[production_company]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='real' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Writer' datatype='string' name='[writer]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/work/Documents/My Tableau Repository/Datasources/odata.0xivelr0jo5lo21dlqnsf04l1uyd_0m30hoi17k4fki112myiv0udevt2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/23/2022 11:28:48 PM' username='tableau_internal_user'>
+          <relation name='yitu-d5am' table='[Extract].[yitu-d5am]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='yitu-d5am (data.sfgov.org/api/odata/v4/yitu-d5am)' increment-value='%null%' refresh-type='create' rows-inserted='1976' timestamp-start='2022-03-23 23:28:45.430' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>__id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[__id]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>__id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1976</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fun_facts</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fun_facts]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>fun_facts</remote-alias>
+              <ordinal>1</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>locations</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[locations]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>locations</remote-alias>
+              <ordinal>2</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>actor_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[actor_2]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>actor_2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>236</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>actor_3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[actor_3]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>actor_3</remote-alias>
+              <ordinal>5</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>actor_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[actor_1]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>actor_1</remote-alias>
+              <ordinal>6</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>221</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>writer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[writer]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>writer</remote-alias>
+              <ordinal>7</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>8</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>295</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>9</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distributor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[distributor]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>distributor</remote-alias>
+              <ordinal>10</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_company]</local-name>
+              <parent-name>[yitu-d5am]</parent-name>
+              <remote-alias>production_company</remote-alias>
+              <ordinal>11</ordinal>
+              <family>yitu-d5am</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='yitu-d5am' id='yitu-d5am_866DE44740FF4466A587E4BEA6E9ECBB'>
+            <properties context=''>
+              <_.fcp.ODataJavaConnector.true...relation connection='odata.0xivelr0jo5lo21dlqnsf04l1uyd' name='yitu-d5am' table='[yitu-d5am]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='yitu-d5am' table='[Extract].[yitu-d5am]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7EEDB1E2-01E3-4CCB-A402-C8363F9C20B1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F74A59CA-609D-41A8-8EB2-7BA757C72568}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
